@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/videoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/matchname_tv"
+        android:layout_marginTop="@dimen/spacing_25"
+        style="@style/text_yellow_style_32"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/videoContainer"
+        android:layout_marginBottom="@dimen/spacing_30"
+        android:layout_marginLeft="@dimen/spacing_20"
+        android:layout_marginRight="@dimen/spacing_20"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/brief_tv"
+        style="@style/text_white_style_30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/matchname_tv"
+        android:layout_marginTop="@dimen/spacing_10"
+        android:lineSpacingExtra="8dp"
+        android:layout_marginBottom="@dimen/spacing_30"
+        android:paddingLeft="@dimen/spacing_20"
+        android:paddingRight="@dimen/spacing_20"
+        android:scrollbars="vertical"
+
+        android:text="" />
+
+    <include layout="@layout/split_line" />
+
+    <include layout="@layout/home_item_title_layout" />
+
+    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/brief_tv">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/kaoji_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_50"
+            android:layout_marginRight="@dimen/spacing_100"
+            android:layout_marginTop="@dimen/spacing_35"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/spacing_20">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="@dimen/spacing_270"
+                android:layout_height="@dimen/spacing_350"
+                android:scaleType="fitXY"
+                android:src="@drawable/kaoji_defaulticon" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_35">
+
+                <TextView
+                    android:id="@+id/namemark_tv"
+                    style="@style/text_white_style_30"
+                    android:text="姓    名"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/name_tv"
+                    style="@style/text_white_style_30"
+                    android:layout_alignTop="@id/namemark_tv"
+                    android:layout_marginLeft="@dimen/spacing_50"
+                    android:layout_toRightOf="@id/namemark_tv"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/sexmark_tv"
+                    style="@style/text_white_style_30"
+                    android:layout_below="@+id/namemark_tv"
+                    android:layout_marginTop="@dimen/spacing_50"
+                    android:text="性    别"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/sex_tv"
+                    style="@style/text_white_style_30"
+                    android:layout_alignTop="@id/sexmark_tv"
+                    android:layout_marginLeft="@dimen/spacing_50"
+                    android:layout_toRightOf="@id/sexmark_tv"
+                    android:textColor="#000000" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spitline_width"
+                    android:layout_alignLeft="@id/name_tv"
+                    android:layout_below="@id/name_tv"
+                    android:layout_marginTop="1dp"
+                    android:background="#000000" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spitline_width"
+                    android:layout_alignLeft="@id/sex_tv"
+                    android:layout_below="@id/sex_tv"
+                    android:layout_marginTop="1dp"
+                    android:background="#000000" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/spacing_100"
+
+            android:paddingRight="@dimen/spacing_100">
+
+
+            <TextView
+                android:id="@+id/sehngrimark_tv"
+                style="@style/text_white_style_30"
+                android:layout_below="@id/sexmark1_tv"
+                android:layout_marginTop="@dimen/spacing_50"
+                android:text="报考类别"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/cardmark_tv"
+                style="@style/text_white_style_30"
+                android:layout_below="@id/sehngrimark_tv"
+                android:layout_marginTop="@dimen/spacing_50"
+                android:text="开考时间"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/zhenshumark_tv"
+                style="@style/text_white_style_30"
+                android:layout_below="@id/cardmark_tv"
+                android:layout_marginTop="@dimen/spacing_50"
+                android:text="开考地点"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/bian_tv"
+                style="@style/text_white_style_30"
+                android:layout_alignTop="@+id/hao_tv"
+                android:layout_below="@+id/zhenshumark_tv"
+                android:text="编"
+
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/hao_tv"
+                style="@style/text_white_style_30"
+                android:layout_alignRight="@+id/sehngrimark_tv"
+                android:layout_alignTop="@+id/bianhao_tv"
+                android:text="号"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/shengri_tv"
+                style="@style/text_white_style_30"
+                android:layout_alignTop="@id/sehngrimark_tv"
+                android:layout_marginLeft="@dimen/spacing_50"
+                android:layout_toRightOf="@id/sehngrimark_tv"
+                android:textColor="#000000" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spitline_width"
+                android:layout_alignLeft="@id/shengri_tv"
+                android:layout_below="@id/shengri_tv"
+                android:layout_marginTop="1dp"
+                android:background="#000000" />
+
+
+            <TextView
+                android:id="@+id/shenfenzheng_tv"
+                style="@style/text_white_style_30"
+                android:layout_alignTop="@id/cardmark_tv"
+                android:layout_marginLeft="@dimen/spacing_50"
+                android:layout_toRightOf="@id/cardmark_tv"
+                android:textColor="#000000" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spitline_width"
+                android:layout_alignLeft="@id/shenfenzheng_tv"
+                android:layout_below="@id/shenfenzheng_tv"
+                android:layout_marginTop="1dp"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/zhengshu_tv"
+                style="@style/text_white_style_30"
+                android:layout_alignTop="@id/zhenshumark_tv"
+                android:layout_marginLeft="@dimen/spacing_50"
+                android:layout_toRightOf="@id/zhenshumark_tv"
+                android:textColor="#000000" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spitline_width"
+                android:layout_alignLeft="@id/zhengshu_tv"
+                android:layout_below="@id/zhengshu_tv"
+                android:layout_marginTop="1dp"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/bianhao_tv"
+                style="@style/text_white_style_30"
+                android:layout_below="@id/zhengshu_tv"
+                android:layout_marginLeft="@dimen/spacing_50"
+                android:layout_marginTop="@dimen/spacing_50"
+                android:layout_toRightOf="@id/hao_tv"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#000000" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spitline_width"
+                android:layout_alignLeft="@id/shenfenzheng_tv"
+                android:layout_below="@id/bianhao_tv"
+                android:layout_marginTop="1dp"
+                android:background="#000000" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_68"
+            android:gravity="center"
+            android:paddingBottom="@dimen/spacing_56">
+
+            <ImageView
+                android:id="@+id/erweima_icon"
+                android:layout_width="@dimen/spacing_334"
+                android:layout_height="@dimen/spacing_334"
+                android:layout_gravity="center_horizontal"
+
+                android:scaleType="fitXY"
+                android:src="@drawable/temp_001" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

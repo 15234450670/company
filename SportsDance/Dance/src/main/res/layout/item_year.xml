@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/year_tv"
+        style="@style/text_white_style_30"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_86"
+        android:gravity="center"
+        android:text="12345" />
+
+    <View
+        android:id="@+id/spit_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spitline_width"
+        android:background="#ffffff" />
+</LinearLayout>

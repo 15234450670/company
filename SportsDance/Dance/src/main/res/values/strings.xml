@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">中国体育舞蹈</string>
+    <string name="homepage">首页</string>
+    <string name="match">赛事</string>
+    <string name="examination">考级</string>
+    <string name="mine">我的</string>
+    <string name="recommend">推荐</string>
+    <string name="directseeding">直播</string>
+    <string name="vadio">视频</string>
+    <string name="consultation">资讯</string>
+    <string name="picture">图片</string>
+    <string name="matchtime">比赛时间:</string>
+    <string name="collect_video">收藏的视频</string>
+    <string name="collect_album">收藏的相册</string>
+    <string name="mine_guanzhu">我的关注</string>
+    <string name="mine_album">我的相册</string>
+    <string name="mine_suggest">意见反馈</string>
+    <string name="mine_about">关于我们</string>
+    <string name="mine_setting">设置</string>
+    <string name="inputbindmobile">请输入绑定的手机号</string>
+    <string name="inputloginpwd">请输入登录密码</string>
+    <string name="changepwd">修改密码</string>
+    <string name="forgetpwd">忘记密码</string>
+    <string name="phone_number">请输入手机号</string>
+    <string name="code">请输入短信验证码</string>
+    <string name="password">请输入密码</string>
+    <string name="oldpassword">请输入原密码</string>
+    <string name="newpassword">请输入新密码</string>
+    <string name="register">注册</string>
+    <string name="load">登录</string>
+    <string name="tologin">已有账号，去登录</string>
+    <string name="cannotreceivecode">收不到验证码</string>
+    <string name="send_code">发送验证码</string>
+    <string name="fastregist">快速注册</string>
+    <string name="perfectinfo">请您完善相关信息以便获取您的考级信息</string>
+
+
+    <string name="rememberpwd">记住密码</string>
+    <string name="personcenter">个人中心</string>
+    <string name="myshebei">我的设备</string>
+    <string name="shiyongshuoming">使用说明</string>
+    <string name="xiugaimima">修改密码</string>
+    <string name="tuichudenglu">退出登录</string>
+    <string name="submit">确定</string>
+    <string name="setting">设置</string>
+    <string name="layout_dialog_loading">正在加载</string>
+    <string name="text_notdatas">暂无数据,点击重试</string>
+    <string name="text_connecterror">请求失败,点击重试</string>
+    <string name="text_clickrepeat">点击重试</string>
+
+    <string name="listview_header_hint_normal">下拉刷新</string>
+    <string name="listview_header_hint_release">释放立即刷新</string>
+    <string name="listview_loading">正在加载...</string>
+    <string name="nomore_loading">没有了</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_done">刷新完成</string>
+    <string name="listview_header_last_time">上次更新时间：</string>
+
+    <string name="umeng_socialize_female">女</string>
+    <string name="umeng_socialize_male">男</string>
+    <string name="umeng_socialize_sina">新浪</string>
+    <string name="umeng_socialize_text_qq_key">QQ</string>
+    <string name="umeng_socialize_text_sina_key">微博</string>
+    <string name="umeng_socialize_text_weixin_key">微信</string>
+    <string name="umeng_socialize_text_weixin_circle_key">微信朋友圈</string>
+
+
+    <string name="system_download_component_disable">下载服务不用,请您启用</string>
+    <string name="system_download_description">版本更新</string>
+</resources>

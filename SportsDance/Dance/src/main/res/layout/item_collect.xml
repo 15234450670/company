@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/home_bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_199"
+        android:layout_marginTop="@dimen/spacing_10"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/iamge_layout"
+            android:layout_width="@dimen/spacing_355"
+            android:layout_height="@dimen/spacing_199"
+            android:layout_below="@+id/top_layout"
+            android:layout_marginLeft="@dimen/spacing_20"
+            android:layout_toLeftOf="@+id/name_layout">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/spacing_355"
+                android:layout_height="@dimen/spacing_199"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_banner" />
+
+            <ImageView
+                android:id="@+id/typeicon_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/imageView"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/home_icon_008"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_25"
+            android:layout_marginRight="@dimen/spacing_35">
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/text_white_style_28"
+                android:layout_marginTop="6dp"
+                android:layout_alignParentTop="true"
+                android:layout_above="@+id/time_tv"
+                android:gravity="left"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/desc_tv"
+                style="@style/text_white_style_28"
+                android:layout_above="@+id/time_tv"
+                android:layout_marginTop="6dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/time_tv"
+                style="@style/text_white_style_22"
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/spacing_13"
+                android:layout_marginRight="@dimen/spacing_13"
+                android:text="" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spitline_width"
+        android:layout_marginTop="@dimen/spacing_8"
+        android:background="#3a2780" />
+</LinearLayout>

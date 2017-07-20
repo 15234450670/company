@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg_color"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/type1_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/type1_bg"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/speed_icon002" />
+
+        <TextView
+            android:id="@+id/type1_tv"
+            style="@style/text_white_style_30"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="WDSF" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/type1_bg"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:visibility="invisible"
+            android:src="@drawable/home_icon_0018" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/type2_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/type2_bg"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/speed_icon002" />
+
+        <TextView
+            android:id="@+id/type2_tv"
+            style="@style/text_white_style_30"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="CDSF" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/type2_bg"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:visibility="invisible"
+            android:src="@drawable/home_icon_0018" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/type3_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/type3_bg"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/speed_icon002" />
+
+        <TextView
+            android:id="@+id/type3_tv"
+            style="@style/text_white_style_30"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="地方赛事" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/type3_bg"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:visibility="invisible"
+            android:src="@drawable/home_icon_0018" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/videoContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:minHeight="@dimen/spacing_396" />
+
+        <LinearLayout
+            android:id="@+id/playstatus_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/videoContainer"
+            android:layout_alignTop="@id/videoContainer"
+            android:background="#000000"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/starttime"
+                style="@style/text_white_style_36" />
+
+            <TextView
+                android:id="@+id/endtime"
+                style="@style/text_white_style_36" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/stop_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/videoContainer"
+            android:layout_alignTop="@id/videoContainer"
+            android:background="#000000"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                style="@style/text_white_style_36"
+                android:text="直播已结束" />
+
+            <TextView
+                android:id="@+id/compete_trailer"
+                style="@style/text_white_style_36"
+                android:layout_marginLeft="@dimen/spacing_100"
+                android:layout_marginRight="@dimen/spacing_100"
+                android:layout_marginTop="@dimen/spacing_15"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/querydetail_tv"
+                style="@style/text_white_style_32"
+                android:layout_marginTop="@dimen/spacing_30"
+                android:background="@drawable/zhibodetail_shape_bg"
+                android:paddingBottom="@dimen/spacing_10"
+                android:paddingLeft="@dimen/spacing_15"
+                android:paddingRight="@dimen/spacing_15"
+                android:paddingTop="@dimen/spacing_10"
+                android:text="查看赛事详清" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/yeelow_color" />
+
+            <TextView
+                android:id="@+id/matchname_tv"
+                style="@style/text_yellow_style_32"
+                android:layout_width="match_parent"
+                android:layout_below="@id/recyclerview"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="@dimen/spacing_50"
+                android:layout_marginRight="@dimen/spacing_50"
+                android:gravity="center"
+                android:text="" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/matchname_tv"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/brief_tv"
+                    style="@style/text_white_style_30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="left"
+                    android:lineSpacingExtra="8dp"
+                    android:paddingBottom="10dp"
+
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

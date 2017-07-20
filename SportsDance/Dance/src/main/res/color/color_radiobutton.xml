@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:state_checked="true" android:color="@color/home_titletext_selectcolor"/>
+    <!-- not selected -->
+    <item android:color="@color/home_titletext_defaultcolor"/>
+
+
+</selector>

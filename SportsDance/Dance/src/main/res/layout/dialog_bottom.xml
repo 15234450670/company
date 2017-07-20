@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/itemone"
+            style="@style/text_white_style_30"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_98"
+            android:gravity="center"
+            android:background="#ffffff"
+            android:text="男"
+            android:textColor="#333333" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_2" />
+
+        <TextView
+            android:id="@+id/itemtwo"
+            style="@style/text_white_style_30"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_98"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="女"
+            android:textColor="#333333" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_10" />
+
+    <TextView
+        android:id="@+id/cancelbtn"
+        style="@style/text_white_style_30"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_98"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="#333333" />
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/home_line_color"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="4dp"
+    android:paddingLeft="4dp"
+    android:paddingTop="4dp">
+
+    <ImageView
+        android:id="@+id/picture_tv"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_video" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/picture_tv"
+        android:layout_alignTop="@+id/picture_tv"
+        android:layout_centerInParent="true"
+        android:src="@drawable/home_icon_008" />
+</RelativeLayout>

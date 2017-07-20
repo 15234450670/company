@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mine_shape_bg">
+
+    <mr.li.dance.ui.widget.SquareLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="@dimen/spacing_30"
+        android:paddingBottom="@dimen/spacing_30"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mine_icon_006" />
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/text_white_style_30"
+            android:layout_marginTop="@dimen/spacing_30"
+            android:text="收藏的视频" />
+    </mr.li.dance.ui.widget.SquareLinearLayout>
+</LinearLayout>

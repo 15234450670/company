@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/background_iv"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+             />
+
+        <LinearLayout
+            android:id="@+id/layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/spacing_38"
+
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/headicon"
+                android:layout_width="@dimen/spacing_112"
+                android:layout_height="@dimen/spacing_112"
+                android:src="@drawable/icon_mydefault" />
+
+            <TextView
+                android:id="@+id/nick_tv"
+                style="@style/text_white_style_32"
+                android:layout_marginTop="@dimen/spacing_20"
+                android:text="" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/text_yellow_style_36"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="中国体育舞蹈" />
+
+        <ImageView
+            android:id="@+id/message_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/title"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/spacing_40"
+            android:src="@drawable/mine_icon_004" />
+    </RelativeLayout>
+
+    <include layout="@layout/split_line" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/home_bg_color"
+        android:overScrollMode="never"
+        android:padding="@dimen/spacing_15" />
+
+</LinearLayout>

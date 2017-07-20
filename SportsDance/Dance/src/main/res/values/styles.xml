@@ -1,0 +1,254 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="WinDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="doctor_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 模糊 -->
+    </style>
+
+    <style name="inputedit_style">
+        <item name="android:background">@null</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColorHint">@color/edit_hint_color</item>
+    </style>
+
+    <declare-styleable name="AVLoadingIndicatorView">
+        <attr name="indicator">
+            <flag name="BallPulse" value="0" />
+            <flag name="BallGridPulse" value="1" />
+            <flag name="BallClipRotate" value="2" />
+            <flag name="BallClipRotatePulse" value="3" />
+            <flag name="SquareSpin" value="4" />
+            <flag name="BallClipRotateMultiple" value="5" />
+            <flag name="BallPulseRise" value="6" />
+            <flag name="BallRotate" value="7" />
+            <flag name="CubeTransition" value="8" />
+            <flag name="BallZigZag" value="9" />
+            <flag name="BallZigZagDeflect" value="10" />
+            <flag name="BallTrianglePath" value="11" />
+            <flag name="BallScale" value="12" />
+            <flag name="LineScale" value="13" />
+            <flag name="LineScaleParty" value="14" />
+            <flag name="BallScaleMultiple" value="15" />
+            <flag name="BallPulseSync" value="16" />
+            <flag name="BallBeat" value="17" />
+            <flag name="LineScalePulseOut" value="18" />
+            <flag name="LineScalePulseOutRapid" value="19" />
+            <flag name="BallScaleRipple" value="20" />
+            <flag name="BallScaleRippleMultiple" value="21" />
+            <flag name="BallSpinFadeLoader" value="22" />
+            <flag name="LineSpinFadeLoader" value="23" />
+            <flag name="TriangleSkewSpin" value="24" />
+            <flag name="Pacman" value="25" />
+            <flag name="BallGridBeat" value="26" />
+            <flag name="SemiCircleSpin" value="27" />
+        </attr>
+        <attr name="indicator_color" format="color" />
+    </declare-styleable>
+
+    <style name="submitbtn_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:background">@drawable/bg_white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+
+
+    <style name="text_white_style_34" parent="text_style">
+        <item name="android:textSize">@dimen/textsize34</item>
+        <item name="android:textColor">#eaeaea</item>
+    </style>
+    <style name="text_white_style_32" parent="text_style">
+        <item name="android:textSize">@dimen/textsize32</item>
+        <item name="android:textColor">#eaeaea</item>
+    </style>
+    <style name="text_white_style_30" parent="text_style">
+        <item name="android:textSize">@dimen/textsize30</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="text_white_style_36" parent="text_style">
+        <item name="android:textSize">@dimen/textsize36</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="text_white_style_28" parent="text_style">
+        <item name="android:textSize">@dimen/textsize28</item>
+        <item name="android:textColor">#eaeaea</item>
+    </style>
+    <style name="text_black_style_28" parent="text_style">
+        <item name="android:textSize">@dimen/textsize28</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="text_white_style_22" parent="text_style">
+        <item name="android:textSize">@dimen/textsize22</item>
+        <item name="android:textColor">#eaeaea</item>
+    </style>
+    <style name="text_white_style_24" parent="text_style">
+        <item name="android:textSize">@dimen/textsize24</item>
+        <item name="android:textColor">#eaeaea</item>
+    </style>
+    <style name="text_white_style_20" parent="text_style">
+        <item name="android:textSize">@dimen/textsize20</item>
+        <item name="android:textColor">#eaeaea</item>
+    </style>
+
+    <style name="text_yellow_style_28" parent="text_style">
+        <item name="android:textSize">@dimen/textsize28</item>
+        <item name="android:textColor">#fddb81</item>
+    </style>
+    <style name="text_yellow_style_32" parent="text_style">
+        <item name="android:textSize">@dimen/textsize32</item>
+        <item name="android:textColor">#fddb81</item>
+    </style>
+    <style name="text_yellow_style_30" parent="text_style">
+        <item name="android:textSize">@dimen/textsize30</item>
+        <item name="android:textColor">#fddb81</item>
+    </style>
+    <style name="text_yellow_style_36" parent="text_style">
+        <item name="android:textSize">@dimen/textsize36</item>
+        <item name="android:textColor">#fddb81</item>
+    </style>
+    <style name="text_yellow_style_44" parent="text_style">
+        <item name="android:textSize">@dimen/textsize44</item>
+        <item name="android:textColor">#fddb81</item>
+    </style>
+    <style name="text_yellow_style_24" parent="text_style">
+        <item name="android:textSize">@dimen/textsize24</item>
+        <item name="android:textColor">#fddb81</item>
+    </style>
+    <style name="text_yellow_style_22" parent="text_style">
+        <item name="android:textSize">@dimen/textsize24</item>
+        <item name="android:textColor">#fddb81</item>
+    </style>
+
+    <style name="icon_style">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="myschedule_current_month_tv">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="FullScreenDialog" parent="android:Theme.Dialog">
+
+        <!-- 窗口设为无标题 -->
+        <item name="android:windowNoTitle">true</item>
+
+        <!-- 窗口浮现在activity之上 -->
+        <item name="android:windowIsFloating">false</item>
+
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@color/title_transparent_black</item>
+
+        <!-- 背景模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+
+        <!-- 全屏 -->
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="BottomDialogStyleBottom" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">false</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="horizontal_line_style">
+        <item name="android:background">@color/line_and_outline_grey</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.4dp</item>
+    </style>
+
+    <style name="Theme_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="bottom_icon_style">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="home_titletext_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/textsize34</item>
+        <item name="android:textColor">@color/color_radiobutton</item>
+        <item name="android:background">@drawable/radio_group_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:minHeight">28dp</item>
+    </style>
+
+    <style name="search_titletext_style" parent="home_titletext_style">
+        <item name="android:background">@drawable/radio_search_selector</item>
+        <item name="android:textColor">@color/color_searchbutton</item>
+    </style>
+
+
+    <style name="rc_pb_file_download_progress">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/rc_pb_file_download_progress</item>
+    </style>
+    <style name="StyleProgressBarMini" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">50dip</item>
+        <item name="android:minHeight">10dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/shape_progressbar_mini</item>
+    </style>
+</resources>

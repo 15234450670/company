@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <mr.li.dance.ui.widget.SlideShowView
+    android:id="@+id/slideShowView"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/spacing_410"
+    android:background="@drawable/default_banner"
+    android:fitsSystemWindows="true"
+    android:scaleType="centerCrop"
+    android:src="@drawable/bk_defalt" />
+
+    <include layout="@layout/split_line" />
+</LinearLayout>

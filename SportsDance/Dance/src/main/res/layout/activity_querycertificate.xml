@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg_color"
+    android:paddingLeft="@dimen/spacing_20"
+    android:paddingRight="@dimen/spacing_20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/spacing_180"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_100"
+            android:layout_marginBottom="@dimen/spacing_20"
+            android:layout_marginLeft="@dimen/spacing_45"
+            android:layout_marginRight="@dimen/spacing_45"
+            android:background="@drawable/mine_shape_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/spacing_20"
+            android:paddingRight="@dimen/spacing_20">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/exam_icon_001" />
+
+            <EditText
+                android:id="@+id/name_tv"
+                style="@style/text_white_style_28"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/spacing_20"
+                android:background="@null"
+                android:hint="请输入姓名"
+                android:textColorHint="#7e7064" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/card_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_100"
+            android:layout_marginBottom="@dimen/spacing_20"
+            android:layout_marginLeft="@dimen/spacing_45"
+            android:layout_marginRight="@dimen/spacing_45"
+            android:background="@drawable/mine_shape_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/spacing_20"
+            android:paddingRight="@dimen/spacing_20">
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/exam_icon_003" />
+
+            <EditText
+                android:id="@+id/card_tv"
+                style="@style/text_white_style_28"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/spacing_20"
+                android:background="@null"
+                android:inputType="number"
+                android:digits="1234567890Xx"
+                android:hint="请输入身份证号"
+                android:textColorHint="#7e7064" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/submit_btn"
+            style="@style/text_white_style_36"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_80"
+
+            android:layout_marginLeft="@dimen/spacing_30"
+            android:layout_marginRight="@dimen/spacing_30"
+            android:layout_marginTop="@dimen/spacing_45"
+            android:background="@drawable/pwdsubmit_shape_bg"
+            android:gravity="center"
+
+            android:text="证书查询" />
+
+        <LinearLayout
+            android:id="@+id/explain_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/spacing_100"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/exam_icon_002" />
+
+            <TextView
+                style="@style/text_yellow_style_36"
+                android:layout_marginLeft="@dimen/spacing_15"
+                android:text="考级说明" />
+        </LinearLayout>
+    </LinearLayout>
+</com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>

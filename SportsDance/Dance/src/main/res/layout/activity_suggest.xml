@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/list_layout"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/input_et"
+            style="@style/text_white_style_28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_15"
+            android:layout_marginLeft="@dimen/spacing_15"
+            android:layout_marginRight="@dimen/spacing_15"
+            android:layout_marginTop="@dimen/spacing_20"
+            android:layout_toLeftOf="@+id/submit_btn"
+            android:layout_weight="1"
+            android:padding="@dimen/spacing_12"
+            android:hint="您的反馈内容"
+            android:background="@drawable/suggest_shape_bg"
+            android:minHeight="@dimen/spacing_80"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/submit_btn"
+            style="@style/text_white_style_24"
+            android:layout_alignBottom="@id/input_et"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/input_et"
+            android:layout_marginBottom="@dimen/spacing_10"
+            android:layout_marginRight="@dimen/spacing_20"
+            android:layout_marginTop="@dimen/spacing_10"
+            android:background="@drawable/pwdsubmit_shape_bg"
+            android:gravity="center"
+            android:paddingLeft="@dimen/spacing_20"
+            android:paddingRight="@dimen/spacing_20"
+            android:paddingTop="@dimen/spacing_10"
+            android:paddingBottom="@dimen/spacing_10"
+
+            android:text="发送"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/home_bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/home_item_title_layout" />
+
+    <include layout="@layout/split_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_260"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="@dimen/spacing_15"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/iamge_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_layout"
+            android:layout_marginLeft="@dimen/spacing_35"
+            android:layout_toLeftOf="@+id/name_layout"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_video" />
+
+            <ImageView
+                android:id="@+id/typeicon_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/imageView"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/home_icon_008"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/name_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_30"
+
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/text_yellow_style_24"
+                android:layout_marginTop="6dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/time_tv"
+                style="@style/text_white_style_22"
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="@dimen/spacing_13"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/starttime"
+                style="@style/text_white_style_22"
+                android:layout_above="@+id/endtime"
+                android:maxLines="3"
+                android:text="开始时间" />
+
+            <TextView
+                android:id="@+id/endtime"
+                style="@style/text_white_style_22"
+                android:layout_above="@+id/level_tv"
+                android:maxLines="3"
+                android:text="结束时间" />
+
+            <TextView
+                android:id="@+id/level_tv"
+                style="@style/text_white_style_22"
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/spacing_8"
+                android:layout_marginTop="@dimen/spacing_8"
+                android:background="#3618a0"
+                android:gravity="center"
+                android:padding="@dimen/spacing_10"
+                android:text="CSDN" />
+
+            <LinearLayout
+                android:id="@+id/share_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/share_icon" />
+
+                <TextView
+                    style="@style/text_white_style_20"
+                    android:padding="@dimen/spacing_10"
+                    android:text="分享" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
+

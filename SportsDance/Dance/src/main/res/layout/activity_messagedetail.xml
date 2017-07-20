@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <TextView
+            android:id="@+id/content_tv"
+            style="@style/text_white_style_28"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:paddingBottom="@dimen/spacing_30"
+            android:paddingLeft="@dimen/spacing_35"
+            android:paddingRight="@dimen/spacing_35"
+            android:paddingTop="@dimen/spacing_30"
+            android:lineSpacingExtra="4dp"
+           />
+    </ScrollView>
+
+</com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>

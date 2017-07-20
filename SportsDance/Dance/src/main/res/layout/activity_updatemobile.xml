@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/spacing_160"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_88"
+            android:layout_marginBottom="@dimen/spacing_20"
+            android:layout_marginLeft="@dimen/spacing_50"
+            android:layout_marginRight="@dimen/spacing_50"
+            android:background="@drawable/mine_shape_bg"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:paddingLeft="@dimen/spacing_20"
+            android:paddingRight="@dimen/spacing_20">
+
+            <ImageView
+                android:id="@+id/mark_1"
+                android:layout_width="@dimen/spacing_88"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mine_icon_0011" />
+
+            <EditText
+                android:id="@id/mobile_tv"
+                style="@style/text_white_style_28"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/mark_1"
+                android:background="@null"
+                android:inputType="phone"
+                android:hint="请输入手机号"
+                android:textColorHint="#7e7064" />
+
+            <TextView
+                android:id="@+id/getcode_tv"
+                style="@style/text_white_style_32"
+                android:layout_width="@dimen/spacing_234"
+                android:layout_height="@dimen/spacing_80"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/pwdsubmit_shape_bg"
+                android:gravity="center"
+                android:text="发送验证码" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/updatepwd_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_88"
+            android:layout_marginBottom="@dimen/spacing_20"
+            android:layout_marginLeft="@dimen/spacing_50"
+            android:layout_marginRight="@dimen/spacing_50"
+            android:background="@drawable/mine_shape_bg"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:paddingLeft="@dimen/spacing_20"
+            android:paddingRight="@dimen/spacing_20">
+
+            <ImageView
+                android:id="@+id/mark_2"
+                android:layout_width="@dimen/spacing_88"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mine_icon_0013" />
+
+            <EditText
+                android:id="@+id/code_tv"
+                style="@style/text_white_style_28"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/mark_2"
+                android:background="@null"
+                android:inputType="number"
+                android:hint="请输入验证码"
+                android:textColorHint="#7e7064" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/nextstep_btn"
+            style="@style/text_white_style_36"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_80"
+            android:layout_marginBottom="@dimen/spacing_50"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:layout_marginLeft="@dimen/spacing_30"
+            android:layout_marginRight="@dimen/spacing_30"
+            android:layout_marginTop="@dimen/spacing_160"
+            android:background="@drawable/pwdsubmit_shape_bg"
+            android:gravity="center"
+            android:text="完成" />
+    </LinearLayout>
+</com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>

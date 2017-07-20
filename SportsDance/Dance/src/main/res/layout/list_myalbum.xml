@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:background="@color/home_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never" />
+
+        </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+        <TextView
+            android:id="@id/nodatalayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/text_white_style_30"
+            android:visibility="gone"
+            android:gravity="center"
+            android:background="@color/home_bg_color"
+            android:text="您没有上传过照片，请您登录官网上传照片" />
+    </RelativeLayout>
+</LinearLayout>

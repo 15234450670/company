@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff3e3"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kaoji_bg"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/spacing_56"
+        android:paddingTop="@dimen/spacing_56">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/icon_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/kaoji_icon_001" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title_tv"
+                    style="@style/text_yellow_style_36"
+                    android:layout_alignTop="@id/icon_mark"
+                    android:layout_marginLeft="@dimen/spacing_25"
+                    android:layout_marginTop="@dimen/spacing_10"
+                    android:layout_toRightOf="@id/icon_mark"
+                    android:text="中国体育舞蹈联合会" />
+
+                <TextView
+                    style="@style/text_yellow_style_44"
+                    android:layout_below="@+id/title_tv"
+                    android:layout_marginLeft="@dimen/spacing_25"
+                    android:layout_marginTop="@dimen/spacing_16"
+                    android:layout_toRightOf="@id/icon_mark"
+                    android:text="体育舞蹈技术等级证书"
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/headicon_iv"
+            android:layout_width="@dimen/spacing_234"
+            android:layout_height="@dimen/spacing_308"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/spacing_35"
+            android:scaleType="fitXY"
+            android:src="@drawable/kaoji_defaulticon" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/spacing_100"
+            android:layout_marginTop="@dimen/spacing_40"
+            android:paddingRight="@dimen/spacing_100">
+
+            <TextView
+                android:id="@+id/namemark_tv"
+                style="@style/text_white_style_30"
+                android:text="姓"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/namemark2_tv"
+                style="@style/text_white_style_30"
+                android:layout_alignRight="@+id/sehngrimark_tv"
+                android:text="名"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/sexmark1_tv"
+                style="@style/text_white_style_30"
+                android:layout_below="@id/namemark_tv"
+                android:layout_marginTop="@dimen/spacing_50"
+                android:text="性"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/sexmark2_tv"
+                style="@style/text_white_style_30"
+                android:layout_alignRight="@+id/sehngrimark_tv"
+                android:layout_below="@id/namemark_tv"
+                android:layout_marginTop="@dimen/spacing_50"
+                android:text="别"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/sehngrimark_tv"
+                style="@style/text_white_style_30"
+                android:layout_below="@id/sexmark1_tv"
+                android:layout_marginTop="@dimen/spacing_50"
+                android:text="出生年月"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/cardmark_tv"
+                style="@style/text_white_style_30"
+                android:layout_below="@id/sehngrimark_tv"
+                android:layout_marginTop="@dimen/spacing_50"
+                android:text="身份证号"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/zhenshumark_tv"
+                style="@style/text_white_style_30"
+                android:layout_below="@id/cardmark_tv"
+                android:layout_marginTop="@dimen/spacing_50"
+                android:text="证书编号"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/name_tv"
+                style="@style/text_white_style_30"
+                android:layout_alignTop="@id/namemark2_tv"
+                android:layout_marginLeft="@dimen/spacing_50"
+                android:layout_toRightOf="@id/namemark2_tv"
+                android:textColor="#000000" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spitline_width"
+                android:layout_alignLeft="@id/name_tv"
+                android:layout_below="@id/name_tv"
+                android:layout_marginTop="1dp"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/sex_tv"
+                style="@style/text_white_style_30"
+                android:layout_alignTop="@id/sexmark2_tv"
+                android:layout_marginLeft="@dimen/spacing_50"
+                android:layout_toRightOf="@id/sexmark2_tv"
+                android:textColor="#000000" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spitline_width"
+                android:layout_alignLeft="@id/sex_tv"
+                android:layout_below="@id/sex_tv"
+                android:layout_marginTop="1dp"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/shengri_tv"
+                style="@style/text_white_style_30"
+                android:layout_alignTop="@id/sehngrimark_tv"
+                android:layout_marginLeft="@dimen/spacing_50"
+                android:layout_toRightOf="@id/sehngrimark_tv"
+                android:textColor="#000000" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spitline_width"
+                android:layout_alignLeft="@id/shengri_tv"
+                android:layout_below="@id/shengri_tv"
+                android:layout_marginTop="1dp"
+                android:background="#000000" />
+
+
+            <TextView
+                android:id="@+id/shenfenzheng_tv"
+                style="@style/text_white_style_30"
+                android:layout_alignTop="@id/cardmark_tv"
+                android:layout_marginLeft="@dimen/spacing_50"
+                android:layout_toRightOf="@id/cardmark_tv"
+                android:textColor="#000000" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spitline_width"
+                android:layout_alignLeft="@id/shenfenzheng_tv"
+                android:layout_below="@id/shenfenzheng_tv"
+                android:layout_marginTop="1dp"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/zhengshu_tv"
+                style="@style/text_white_style_30"
+                android:layout_alignTop="@id/zhenshumark_tv"
+                android:layout_marginLeft="@dimen/spacing_50"
+                android:layout_toRightOf="@id/zhenshumark_tv"
+                android:textColor="#000000" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spitline_width"
+                android:layout_alignLeft="@id/zhengshu_tv"
+                android:layout_below="@id/zhengshu_tv"
+                android:layout_marginTop="1dp"
+                android:background="#000000" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <TextView
+        style="@style/text_white_style_32"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/spacing_20"
+        android:background="@drawable/kaoji_icon_003"
+        android:gravity="center"
+        android:text="考级履历"
+        android:textColor="#a47944" />
+
+</LinearLayout>

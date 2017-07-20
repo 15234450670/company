@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg_color"
+
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:background="@color/home_bg_color"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_60"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/spacing_70"
+            android:layout_marginRight="@dimen/spacing_70"
+            android:background="@drawable/search_shape_corner"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_marchsearch" />
+
+            <TextView
+                style="@style/text_white_style_24"
+                android:layout_marginLeft="@dimen/spacing_20"
+                android:text="赛事名称"
+                android:textColor="#b9b9b9" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/split_line" />
+
+    <include layout="@layout/list_layout" />
+</LinearLayout>

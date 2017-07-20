@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/spacing_180"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_88"
+            android:layout_marginBottom="@dimen/spacing_20"
+            android:layout_marginLeft="@dimen/spacing_50"
+            android:layout_marginRight="@dimen/spacing_50"
+            android:background="@drawable/mine_shape_bg"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:paddingLeft="@dimen/spacing_20"
+            android:paddingRight="@dimen/spacing_20">
+
+            <ImageView
+                android:id="@+id/mark_1"
+                android:layout_width="@dimen/spacing_88"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/login_icon_005" />
+
+            <EditText
+                android:id="@+id/login_name"
+                style="@style/text_white_style_28"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/mark_1"
+                android:background="@null"
+                android:hint="@string/inputbindmobile"
+                android:inputType="number"
+                android:textColorHint="#7e7064" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/updatepwd_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_88"
+            android:layout_marginBottom="@dimen/spacing_15"
+            android:layout_marginLeft="@dimen/spacing_50"
+            android:layout_marginRight="@dimen/spacing_50"
+            android:background="@drawable/mine_shape_bg"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:paddingLeft="@dimen/spacing_20"
+            android:paddingRight="@dimen/spacing_20">
+
+            <ImageView
+                android:id="@+id/mark_2"
+                android:layout_width="@dimen/spacing_88"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/login_icon_002" />
+
+            <EditText
+                android:id="@+id/login_password"
+                style="@style/text_white_style_28"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@id/mark_2"
+                android:background="@null"
+                android:hint="@string/inputloginpwd"
+                android:inputType="textPassword"
+                android:textColorHint="#7e7064" />
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/text_yellow_style_28"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/spacing_50"
+            android:clickable="true"
+            android:onClick="toForgetPwd"
+            android:text="@string/forgetpwd" />
+
+        <TextView
+            android:id="@+id/login_btn"
+            style="@style/text_white_style_32"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_80"
+            android:layout_marginLeft="@dimen/spacing_30"
+            android:layout_marginRight="@dimen/spacing_30"
+            android:layout_marginTop="@dimen/spacing_60"
+            android:background="@drawable/pwdsubmit_shape_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="toLogin"
+            android:text="@string/load"
+            android:textColor="#ffffff" />
+
+        <TextView
+            style="@style/text_white_style_32"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_80"
+            android:layout_marginBottom="@dimen/spacing_50"
+            android:layout_marginLeft="@dimen/spacing_30"
+            android:layout_marginRight="@dimen/spacing_30"
+            android:layout_marginTop="@dimen/spacing_60"
+            android:background="@drawable/mine_shape_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="toRegist"
+            android:text="@string/fastregist"
+            android:textColor="#ffffff" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <include layout="@layout/split_line" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/text_yellow_style_22"
+                    android:layout_centerInParent="true"
+                    android:background="@color/home_bg_color"
+                    android:paddingLeft="@dimen/spacing_50"
+                    android:paddingRight="@dimen/spacing_50"
+                    android:text="第三方登录" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/companymobile_tv"
+                android:layout_below="@+id/top_layout"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/wx_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/login_icon_003" />
+
+                <ImageView
+                    android:id="@+id/qq_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_100"
+
+                    android:src="@drawable/login_icon_001" />
+
+               <!-- <ImageView
+                    android:id="@+id/wb_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/login_icon_004" />-->
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/companymobile_tv"
+                style="@style/text_yellow_style_22"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/spacing_50"
+                android:background="@color/home_bg_color"
+                android:text="客服电话:010-60521234"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>

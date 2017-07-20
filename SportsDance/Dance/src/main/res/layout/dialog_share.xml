@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E9EFF2"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/text_white_style_32"
+            android:layout_height="48dp"
+            android:padding="@dimen/spacing_20"
+            android:text="请选择要分享的平台"
+            android:textColor="#575A5C" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_180"
+            android:layout_marginBottom="@dimen/spacing_30"
+            android:background="#E9EFF2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/qq_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/qq_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/umeng_socialize_qq" />
+
+                <TextView
+                    style="@style/text_white_style_30"
+                    android:text="QQ"
+                    android:textColor="#575A5C" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wx_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/wx_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/umeng_socialize_wechat" />
+
+                <TextView
+                    style="@style/text_white_style_30"
+                    android:text="微信"
+                    android:textColor="#575A5C" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wx2_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/wx2_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/umeng_socialize_wxcircle" />
+
+                <TextView
+                    style="@style/text_white_style_30"
+                    android:text="朋友圈"
+                    android:textColor="#575A5C" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wb_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/wb_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/umeng_socialize_sina" />
+
+                <TextView
+                    style="@style/text_white_style_30"
+                    android:text="微博"
+                    android:textColor="#575A5C" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/cancel_tv"
+            style="@style/text_white_style_30"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="取消分享"
+            android:textColor="#575A5C" />
+    </LinearLayout>
+</LinearLayout>

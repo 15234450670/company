@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/home_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/spacing_170"
+            android:layout_height="@dimen/spacing_118"
+            android:layout_marginBottom="@dimen/spacing_20"
+            android:layout_marginLeft="@dimen/spacing_35"
+            android:layout_marginRight="@dimen/spacing_35"
+            android:layout_marginTop="@dimen/spacing_20"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_video" />
+
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/text_yellow_style_28"
+            android:layout_alignTop="@id/imageView"
+            android:layout_toRightOf="@id/imageView"
+            android:maxLines="2"
+            />
+
+        <TextView
+            android:id="@+id/timemark"
+            style="@style/text_white_style_22"
+            android:layout_width="wrap_content"
+            android:layout_alignBaseline="@+id/time_tv"
+            android:layout_alignBottom="@+id/time_tv"
+            android:layout_toEndOf="@+id/imageView"
+            android:text="@string/matchtime" />
+
+        <TextView
+            android:id="@+id/time_tv"
+            style="@style/text_white_style_22"
+            android:layout_width="wrap_content"
+            android:layout_alignBottom="@id/imageView"
+            android:layout_toRightOf="@id/timemark"
+            android:text="" />
+
+        <LinearLayout
+            android:id="@+id/share_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/time_tv"
+            android:layout_alignParentRight="true"
+            android:gravity="bottom"
+            android:layout_marginRight="@dimen/spacing_20"
+            android:visibility="invisible"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/share_icon_001" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/spacing_10"
+                style="@style/text_white_style_20"
+                android:text="分享" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spitline_width"
+        android:background="#3b2788" />
+</LinearLayout>
+

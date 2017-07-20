@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/home_bg_color"
+        android:gravity="center_vertical"
+        android:minHeight="48dip"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/title_rg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_icon_004"
+            android:gravity="center"
+            android:minHeight="30dp"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <RadioButton
+                android:id="@+id/recommend_rb"
+                style="@style/home_titletext_style"
+                android:checked="true"
+                android:text="@string/recommend" />
+
+
+            <RadioButton
+                android:id="@+id/directseeding_rb"
+                style="@style/home_titletext_style"
+                android:gravity="center"
+                android:text="@string/directseeding" />
+
+            <RadioButton
+                android:id="@+id/video_rb"
+                style="@style/home_titletext_style"
+                android:gravity="center"
+                android:text="@string/vadio" />
+
+            <RadioButton
+                android:id="@+id/consultation_rb"
+                style="@style/home_titletext_style"
+                android:gravity="center"
+                android:text="@string/consultation" />
+
+            <RadioButton
+                android:id="@+id/picture_rb"
+                style="@style/home_titletext_style"
+                android:gravity="center"
+                android:text="@string/picture" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/search_btn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.40"
+                android:src="@drawable/home_icon_007" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_spilitline_width"
+        android:layout_alignParentBottom="true"
+
+        android:background="@color/home_line_color" />
+
+    <android.support.v4.view.ViewPager
+
+        android:id="@+id/home_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

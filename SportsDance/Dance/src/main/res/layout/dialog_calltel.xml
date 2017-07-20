@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sereach_bg" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/message"
+                style="@style/text_white_style_30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/spacing_234"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/spacing_40" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spitline_width"
+                android:background="@color/spitline_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_100"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/cancelbtn"
+                    style="@style/text_black_style_28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="取消" />
+
+                <View
+                    android:layout_width="@dimen/spitline_width"
+                    android:layout_height="match_parent"
+                    android:background="@color/spitline_color" />
+
+                <TextView
+                    android:id="@+id/callbtn"
+                    style="@style/text_black_style_28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="呼叫" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/deleteicon"
+            android:layout_width="@dimen/spacing_50"
+            android:layout_height="@dimen/spacing_50"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/spacing_20"
+            android:layout_marginTop="@dimen/spacing_20"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:visibility="invisible"
+             />
+    </RelativeLayout>
+
+</LinearLayout>

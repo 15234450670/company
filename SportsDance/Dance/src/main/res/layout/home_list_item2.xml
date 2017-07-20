@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_base_type2" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spitline_width"
+        android:background="#3b2788" />
+</LinearLayout>

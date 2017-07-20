@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/home_bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_260"
+        android:layout_marginTop="@dimen/spacing_10"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/iamge_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_layout"
+            android:layout_marginLeft="@dimen/spacing_20"
+            android:layout_toLeftOf="@+id/name_layout"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_video" />
+
+            <ImageView
+                android:id="@+id/typeicon_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/imageView"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/home_icon_008" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/name_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_25"
+            android:layout_marginRight="@dimen/spacing_35"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/text_white_style_28"
+                android:layout_marginTop="6dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/desc_tv"
+                style="@style/text_white_style_28"
+                android:layout_below="@id/name"
+                android:layout_marginTop="6dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/time_tv"
+                style="@style/text_white_style_22"
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/spacing_13"
+                android:layout_marginRight="@dimen/spacing_13"
+                android:text="" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spitline_width"
+        android:layout_marginTop="@dimen/spacing_8"
+        android:background="#3a2780" />
+</LinearLayout>

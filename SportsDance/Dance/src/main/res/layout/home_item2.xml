@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_170"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/home_bg_color"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/title_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/spacing_40"
+            android:gravity="center"
+            android:minHeight="30dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/first_rb"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:button="@drawable/advert_selector"
+                android:checked="true" />
+
+
+            <RadioButton
+                android:id="@+id/second_rb"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"
+                android:button="@drawable/advert_selector" />
+
+            <RadioButton
+                android:id="@+id/third_rb"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:button="@drawable/advert_selector" />
+        </RadioGroup>
+
+        <ViewSwitcher
+            android:id="@+id/textswitcher"
+            style="@style/text_white_style_28"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/spacing_15"
+            android:layout_toRightOf="@id/title_rg"
+            android:gravity="center"
+            android:text="“世锦赛”" />
+    </RelativeLayout>
+
+    <include layout="@layout/split_line" />
+
+
+</LinearLayout>

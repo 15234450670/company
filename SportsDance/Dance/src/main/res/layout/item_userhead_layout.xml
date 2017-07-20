@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/spacing_300">
+
+    <ImageView
+        android:id="@+id/background_iv"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_height="match_parent" />
+
+ <!--   <mr.li.dance.ui.widget.BlurringView
+        android:id="@+id/blurring_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/headicon"
+            android:layout_width="@dimen/spacing_112"
+            android:layout_height="@dimen/spacing_112"
+            android:src="@drawable/icon_mydefault" />
+
+        <TextView
+            style="@style/text_white_style_30"
+            android:id="@+id/username_tv"
+            android:layout_marginTop="@dimen/spacing_12"
+            android:text="" />
+
+        <LinearLayout
+            android:id="@+id/guanzhu_layout"
+            android:layout_width="@dimen/spacing_200"
+            android:layout_height="@dimen/spacing_48"
+            android:layout_marginTop="@dimen/spacing_45"
+            android:background="@drawable/guanzhu_shape_corner"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/guanzhu_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/aixin_icon" />
+
+            <TextView
+                android:id="@+id/guanzhu_tv"
+                style="@style/text_white_style_30"
+                android:layout_marginLeft="@dimen/spacing_20"
+                android:text="关注" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_spilitline_width"
+        android:layout_alignParentBottom="true"
+        android:background="@color/home_line_color" />
+</RelativeLayout>

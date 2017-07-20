@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/home_bg_color"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_spilitline_width"
+        android:background="@color/home_line_color" />
+
+    <!-- 底部导航 -->
+
+    <LinearLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/home_bg_color"
+        android:gravity="center_vertical"
+        android:minHeight="52dp"
+        android:orientation="horizontal">
+
+        <mr.li.dance.ui.widget.BottomRelativeLayout
+            android:id="@+id/homepage_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="3dp"
+            app:default_icon="@drawable/home_icon_0015"
+            app:hover_icon="@drawable/home_icon_0011">
+
+            <ImageView
+                android:id="@+id/homepage_cion"
+                style="@style/bottom_icon_style"
+                android:layout_centerHorizontal="true"
+                android:focusable="false"
+                android:src="@drawable/home_icon_0011" />
+            <!--android:src="@drawable/tab_contact_list"-->
+
+            <TextView
+                android:id="@+id/homepage_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/homepage_cion"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="@string/homepage"
+                android:textColor="@color/bottom_text_hover_color"
+                android:textSize="12sp" />
+        </mr.li.dance.ui.widget.BottomRelativeLayout>
+
+        <mr.li.dance.ui.widget.BottomRelativeLayout
+            android:id="@+id/match_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:padding="3dp"
+            app:default_icon="@drawable/home_icon_0014"
+            app:hover_icon="@drawable/home_icon_0010">
+
+
+            <ImageView
+                android:id="@+id/match_icon"
+                style="@style/bottom_icon_style"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:focusable="false"
+                android:src="@drawable/home_icon_0014" />
+
+            <TextView
+                android:id="@+id/match_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/match_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="@string/match"
+                android:textColor="@color/bottom_text_default_color"
+                android:textSize="12sp" />
+
+
+        </mr.li.dance.ui.widget.BottomRelativeLayout>
+
+
+        <mr.li.dance.ui.widget.BottomRelativeLayout
+            android:id="@+id/examination_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:padding="3dp"
+            app:default_icon="@drawable/home_icon_0013"
+            app:hover_icon="@drawable/home_icon_009">
+
+
+            <ImageView
+                android:id="@+id/examination_icon"
+                style="@style/bottom_icon_style"
+                android:layout_centerHorizontal="true"
+                android:focusable="false"
+                android:src="@drawable/home_icon_0013" />
+            <!--android:src="@drawable/tab_contact_list"-->
+
+            <TextView
+                android:id="@+id/examination_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/examination_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="@string/examination"
+                android:textColor="@color/bottom_text_default_color"
+                android:textSize="12sp" />
+        </mr.li.dance.ui.widget.BottomRelativeLayout>
+
+        <mr.li.dance.ui.widget.BottomRelativeLayout
+            android:id="@+id/mine_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="3dp"
+            app:default_icon="@drawable/home_icon_0012"
+            app:hover_icon="@drawable/home_icon_006">
+
+
+            <ImageView
+                android:id="@+id/mine_icon"
+                style="@style/bottom_icon_style"
+                android:layout_centerHorizontal="true"
+                android:focusable="false"
+                android:src="@drawable/home_icon_0012" />
+            <!--android:src="@drawable/tab_contact_list"-->
+
+            <TextView
+                android:id="@+id/mine_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mine_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="@string/mine"
+                android:textColor="@color/bottom_text_default_color"
+                android:textSize="12sp" />
+        </mr.li.dance.ui.widget.BottomRelativeLayout>
+    </LinearLayout>
+</LinearLayout>

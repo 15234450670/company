@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Dance/Dance.iml" filepath="$PROJECT_DIR$/Dance/Dance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LePlayerSdk/LePlayerSdk.iml" filepath="$PROJECT_DIR$/LePlayerSdk/LePlayerSdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LePlayerSkin/LePlayerSkin.iml" filepath="$PROJECT_DIR$/LePlayerSkin/LePlayerSkin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pushlib/Pushlib.iml" filepath="$PROJECT_DIR$/Pushlib/Pushlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RefreshLibrary/RefreshLibrary.iml" filepath="$PROJECT_DIR$/RefreshLibrary/RefreshLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SportsDance.iml" filepath="$PROJECT_DIR$/SportsDance.iml" />
+    </modules>
+  </component>
+</project>

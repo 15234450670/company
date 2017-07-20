@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/home_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/iamge_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_398"
+        android:layout_below="@+id/top_layout"
+        android:layout_marginLeft="@dimen/spacing_20"
+        android:layout_marginRight="@dimen/spacing_20"
+        android:layout_marginTop="@dimen/spacing_20">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_video" />
+
+        <ImageView
+            android:id="@+id/typeicon_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/home_icon_008"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/text_yellow_style_30"
+        android:layout_below="@+id/iamge_layout"
+        android:layout_marginBottom="@dimen/spacing_22"
+        android:layout_marginLeft="@dimen/spacing_40"
+        android:layout_marginRight="@dimen/spacing_40"
+        android:layout_marginTop="@dimen/spacing_20"
+        android:singleLine="true"
+        android:text="asdfasdfasdf" />
+
+    <TextView
+        android:id="@+id/time_tv"
+        style="@style/text_white_style_22"
+        android:layout_width="wrap_content"
+        android:layout_alignLeft="@id/name"
+        android:layout_below="@id/name"
+        android:gravity="right"
+        android:layout_marginBottom="@dimen/spacing_10"
+        android:singleLine="true"
+        android:text="2017-09-09" />
+
+    <LinearLayout
+        android:id="@+id/share_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/time_tv"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/spacing_20"
+        android:gravity="bottom"
+        android:visibility="invisible"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/share_icon_001" />
+
+        <TextView
+            style="@style/text_white_style_20"
+            android:layout_marginLeft="@dimen/spacing_10"
+            android:textColor="#d3d3d3"
+            android:text="分享" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/picnum_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/icon_mark"
+            android:layout_width="28dp"
+            android:layout_height="24dp"
+            android:src="@drawable/home_icon_001" />
+
+        <TextView
+            android:id="@+id/num_tv"
+            style="@style/text_white_style_20"
+            android:layout_width="wrap_content"
+            android:text="共25张" />
+    </LinearLayout>
+</RelativeLayout>

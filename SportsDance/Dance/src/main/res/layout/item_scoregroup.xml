@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/spacing_25"
+    android:paddingRight="@dimen/spacing_25"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/mobile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_100"
+        android:layout_marginBottom="@dimen/spacing_20"
+        android:background="@drawable/mine_shape_bg"
+        android:paddingLeft="@dimen/spacing_20"
+        android:paddingRight="@dimen/spacing_20">
+
+        <TextView
+            android:id="@+id/groupname_tv"
+            style="@style/text_white_style_28"
+            android:layout_centerVertical="true"
+
+            android:text="" />
+        <TextView
+            android:id="@+id/groupnum_tv"
+            style="@style/text_white_style_24"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

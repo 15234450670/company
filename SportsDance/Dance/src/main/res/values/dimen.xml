@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spitline_width">0.5dp</dimen>
+    <dimen name="textandiconmargin">10dp</dimen>
+    <dimen name="ksw_md_thumb_ripple_size">42dp</dimen>
+    <dimen name="ksw_md_thumb_solid_inset">11dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_inset">11dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_inset_top">11dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_inset_bottom">10dp</dimen>
+
+    <dimen name="home_spilitline_width">1.5dp</dimen>
+
+    <dimen name="lubo_width">12dip</dimen>
+    <dimen name="lubo_height">8dip</dimen>
+
+
+    <dimen name="textsize44">22sp</dimen>
+    <dimen name="textsize34">17sp</dimen>
+    <dimen name="textsize32">16sp</dimen>
+    <dimen name="textsize30">15sp</dimen>
+    <dimen name="textsize36">18sp</dimen>
+    <dimen name="textsize28">14sp</dimen>
+    <dimen name="textsize24">12sp</dimen>
+    <dimen name="textsize22">11sp</dimen>
+    <dimen name="textsize20">10sp</dimen>
+    <dimen name="textsize16">8sp</dimen>
+    <dimen name="textsize12">6sp</dimen>
+
+    <dimen name="spacing_2">1dp</dimen>
+    <dimen name="spacing_6">3dp</dimen>
+    <dimen name="spacing_8">4dp</dimen>
+    <dimen name="spacing_10">5dp</dimen>
+    <dimen name="spacing_12">6dp</dimen>
+    <dimen name="spacing_13">6.5dp</dimen>
+    <dimen name="spacing_15">7.5dp</dimen>
+    <dimen name="spacing_16">8dp</dimen>
+    <dimen name="spacing_18">9dp</dimen>
+    <dimen name="spacing_20">10dp</dimen>
+    <dimen name="spacing_22">11dp</dimen>
+    <dimen name="spacing_24">12dp</dimen>
+    <dimen name="spacing_25">12.5dp</dimen>
+    <dimen name="spacing_26">13dp</dimen>
+    <dimen name="spacing_30">15dp</dimen>
+    <dimen name="spacing_35">17.5dp</dimen>
+    <dimen name="spacing_38">19dp</dimen>
+    <dimen name="spacing_40">20dp</dimen>
+    <dimen name="spacing_46">23dp</dimen>
+    <dimen name="spacing_45">22.5dp</dimen>
+    <dimen name="spacing_48">24dp</dimen>
+    <dimen name="spacing_60">30dp</dimen>
+    <dimen name="spacing_70">35dp</dimen>
+    <dimen name="spacing_76">38dp</dimen>
+    <dimen name="spacing_50">25dp</dimen>
+    <dimen name="spacing_56">28dp</dimen>
+    <dimen name="spacing_68">34dp</dimen>
+    <dimen name="spacing_80">40dp</dimen>
+    <dimen name="spacing_84">42dp</dimen>
+    <dimen name="spacing_86">43dp</dimen>
+    <dimen name="spacing_88">44dp</dimen>
+    <dimen name="spacing_98">49dp</dimen>
+    <dimen name="spacing_100">50dp</dimen>
+    <dimen name="spacing_112">56dp</dimen>
+    <dimen name="spacing_118">59dp</dimen>
+    <dimen name="spacing_135">68dp</dimen>
+
+    <dimen name="spacing_200">100dp</dimen>
+    <dimen name="spacing_234">117dp</dimen>
+    <dimen name="spacing_260">130dp</dimen>
+    <dimen name="spacing_270">136dp</dimen>
+    <dimen name="spacing_300">150dp</dimen>
+    <dimen name="spacing_308">154dp</dimen>
+    <dimen name="spacing_350">175dp</dimen>
+    <dimen name="spacing_398">200dp</dimen>
+    <dimen name="spacing_410">210dp</dimen>
+    <dimen name="spacing_230">115dp</dimen>
+    <dimen name="spacing_170">86dp</dimen>
+    <dimen name="spacing_160">80dp</dimen>
+    <dimen name="spacing_180">90dp</dimen>
+    <dimen name="spacing_192">96dp</dimen>
+    <dimen name="spacing_199">99dp</dimen>
+    <dimen name="spacing_304">152dp</dimen>
+    <dimen name="spacing_334">167dp</dimen>
+    <dimen name="spacing_355">177dp</dimen>
+    <dimen name="spacing_396">198dp</dimen>
+    <dimen name="spacing_490">245dp</dimen>
+    <dimen name="spacing_562">281dp</dimen>
+    <dimen name="spacing_600">300dp</dimen>
+    <dimen name="item_height">60dp</dimen>
+    <dimen name="item_margin">10dp</dimen>
+</resources>

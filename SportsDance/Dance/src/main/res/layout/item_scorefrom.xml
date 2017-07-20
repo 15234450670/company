@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/spacing_10"
+    android:paddingTop="@dimen/spacing_30">
+
+    <RelativeLayout
+        android:layout_width="@dimen/spacing_192"
+        android:layout_height="@dimen/spacing_135"
+        android:background="@drawable/scorefrom_shape_bg">
+
+        <TextView
+            android:id="@+id/ranking_tv"
+            style="@style/text_white_style_24"
+            android:layout_centerInParent="true"
+            android:background="@drawable/mathc_icon_009"
+            android:gravity="center_horizontal"
+            android:paddingTop="4dp"
+            android:text=""
+            android:textSize="22dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_18"
+        android:layout_marginLeft="@dimen/spacing_30"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/daibiaodui_tv"
+            style="@style/text_white_style_28"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/beihao_tv"
+            style="@style/text_white_style_28" />
+
+        <TextView
+            android:id="@+id/member_tv"
+            style="@style/text_white_style_28" />
+    </LinearLayout>
+</LinearLayout>
